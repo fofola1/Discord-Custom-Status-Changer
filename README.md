@@ -44,14 +44,6 @@ Open `.env` in a text editor and add your token and set the frequency (in second
 DC_TOKEN=your_actual_token_here
 FREQUENCY=300
 ```
-Open `statuses.json` and add your desired status messages in a JSON array format:
-```json
-[
-    "My custom status 1",
-    "My custom status 2",
-    "My custom status 3"
-]
-```
 
 > [!IMPORTANT]
 > **How to get your token:**
@@ -60,6 +52,15 @@ Open `statuses.json` and add your desired status messages in a JSON array format
 > 3. Go to the **Application** (Chrome) or **Storage** (Firefox) tab.
 > 4. Expand **Local Storage** -> `https://discord.com`.
 > 5. Look for the key named `token` and copy the value (without quotes).
+
+Open `statuses.json` and add your desired status messages in a JSON array format:
+```json
+[
+    "My custom status 1",
+    "My custom status 2",
+    "My custom status 3"
+]
+```
 
 ---
 
