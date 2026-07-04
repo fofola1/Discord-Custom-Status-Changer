@@ -13,15 +13,16 @@ load_dotenv()
 logger = getLogger(__name__)
 logger.setLevel(INFO)
 
-formatter = Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_formatter = Formatter('%(asctime)s - %(levelname)s - %(message)s')
+console_formatter = Formatter('%(levelname)s - %(message)s')
 
 file_handler = FileHandler('status_changer.log')
 file_handler.setLevel(INFO)
-file_handler.setFormatter(formatter)
+file_handler.setFormatter(file_formatter)
 
 console_handler = StreamHandler()
 console_handler.setLevel(INFO)
-console_handler.setFormatter(formatter)
+console_handler.setFormatter(console_formatter)
 
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
